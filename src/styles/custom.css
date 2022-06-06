@@ -1,0 +1,42 @@
+.nav-link {
+    margin-left: 20px;
+}
+
+.content-title {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.content-list button {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(186 230 253);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.content-list > li {
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content-list-text {
+    position: absolute;
+    color: white;
+    font-size: 29px;
+    margin-left: 30px;
+}
+
+.content-list-hidden-text {
+    position: absolute;
+    color: white;
+    font-size: 76px;
+    font-weight: bold;
+    top: 20%;
+    left: 10%;
+}
+
+.information-text {
+    font-size: 40px;
+}
