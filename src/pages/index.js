@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-// import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import catImage from "../images/cat.jpeg";
@@ -7,20 +6,6 @@ import funnyCatImage from "../images/funny-cat.jpeg";
 
 
 const IndexPage = () => {
-  // const { allStrapiArticle, strapiGlobal } = useStaticQuery(graphql`
-  //   query {
-  //     allStrapiArticle {
-  //       nodes {
-  //         ...ArticleCard
-  //       }
-  //     }
-  //     strapiGlobal {
-  //       siteName
-  //       siteDescription
-  //     }
-  //   }
-  // `)
-
   const [isPressed, setPressed] = useState(false)
 
   return (
