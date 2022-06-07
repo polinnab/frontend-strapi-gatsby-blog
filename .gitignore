@@ -67,3 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+#for heroku deploy
+.package-lock.json

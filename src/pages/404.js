@@ -12,9 +12,11 @@ const NotFoundPage = (props) => {
     setLoader(true)
     fetch(`https://anadea.info/${path}`)
     .then(function(response) {
+      debugger
         return response.text()
     })
     .then(function(html) {
+      debugger
         setCustomHTML(html)
     })
     .catch(function(err) {  
@@ -22,6 +24,10 @@ const NotFoundPage = (props) => {
     });
     setLoader(false)
   }
+
+  // blob
+
+  //render image without <img />
 
   useEffect(() => {
     renderCustomPage('')
@@ -31,7 +37,8 @@ const NotFoundPage = (props) => {
     <>
       <Seo title="404: Not found" />
       {loader && <div>Loading...</div>}
-      <div dangerouslySetInnerHTML={{__html: customHTML}}></div>
+      <div dangerouslySetInnerHTML={{__html: customHTML}}>{customHTML}</div>
+
     </>
   )
 }
