@@ -42,39 +42,3 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 }
-
-// exports.createSchemaCustomization = ({ actions }) => {
-//   actions.createTypes(`
-//   type STRAPI__COMPONENT_SHARED_MEDIAFile implements Node {
-//       id: ID!
-//       localFile: [LocalFile!]
-//   }
-//   type STRAPI__COMPONENT_SHARED_SLIDERFiles implements Node {
-//     id: ID!
-//     localFile: [LocalFile!]
-//   }
-//   type STRAPI_ARTICLECover implements Node {
-//     id: ID!
-//     localFile: [LocalFile!]
-//   }
-//   type STRAPI_GLOBALFavicon implements Node {
-//     id: ID!
-//     localFile: [LocalFile!]
-//   }
-//   type STRAPI__COMPONENT_SHARED_SEOShareImage implements Node {
-//     id: ID!
-//     localFile: [LocalFile!]
-//   }
-//   type LocalFile {
-//     url: [String!]
-//     childImageSharp: [ChildImageSharp!]!
-//   }
-//   type ChildImageSharp {
-//     gatsbyImageData: [GatsbyImageDataCust!]!
-//   }
-//   type GatsbyImageDataCust {
-//     id: ID!
-//     aspectRatio: Int!
-//   }
-//   `)
-// }

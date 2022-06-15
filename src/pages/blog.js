@@ -22,7 +22,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Seo seo={{ metaTitle: "Home" }} />
+      <Seo seo={{ metaTitle: "Blog" }} />
       <Headings
         title={strapiGlobal.siteName}
         description={strapiGlobal.siteDescription}

@@ -4,6 +4,30 @@ require("dotenv").config({
 
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby and Strapi Blog`,
+        short_name: `GatsbyStrapi blog`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#bae6fd`,
+        display: `standalone`,
+        icons: [
+          {
+            "src": "static/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+          },
+          {
+            "src": "static/favicon.ico",
+            "sizes": "512x512",
+          }
+        ],
+        include_favicon: true
+      }
+    },
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-postcss",
     {
@@ -55,6 +79,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about/`],
       },
     },
     "gatsby-plugin-image",

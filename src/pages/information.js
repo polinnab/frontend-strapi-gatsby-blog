@@ -4,18 +4,10 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const InformationPage = () => {
-  const { strapiAbout } = useStaticQuery(graphql`
-    query {
-      strapiAbout {
-        title
-      }
-    }
-  `)
-  const { title } = strapiAbout
 
   const seo = {
-    metaTitle: title,
-    metaDescription: title,
+    metaTitle: "Information",
+    metaDescription: "Information page",
   }
 
   return (
